@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#c {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+#b, #d {
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#b {
+    width: 70%;
+}
+
+#d {
+    width: 25%;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#e {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#e li {
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.f { /* Class for done tasks */
+    text-decoration: line-through;
+    background-color: #d9edf7 !important;
+    color: #888;
+}
+
+.g { /* Delete button inside li */
+    background: none;
+    border: none;
+    color: #c0392b;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2em;
+}
