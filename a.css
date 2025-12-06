@@ -92,3 +92,24 @@ body {
     background-color: #f8f9fa !important; /* Lighter color for done tasks */
     color: #888;
 }
+
+
+#e li {
+    /* ... existing styles ... */
+    padding: 10px;
+    
+    /* ⭐ INCREASE THIS VALUE for more space */
+    margin-bottom: 15px; 
+    
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    
+    /* New: Green background highlight */
+    background-color: #d4edda; 
+    border: 1px solid #c3e6cb; 
+    font-size: 1.1em; 
+}
