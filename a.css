@@ -51,13 +51,13 @@ body {
     transition: background-color 0.2s;
 }
 
-.f { /* Class for done tasks */
+.f { 
     text-decoration: line-through;
     background-color: #d9edf7 !important;
     color: #888;
 }
 
-.g { /* Delete button inside li */
+.g { 
     background: none;
     border: none;
     color: #c0392b;
@@ -68,10 +68,10 @@ body {
 
 
 #e li {
-    /* Existing styles */
+ 
     background-color: #eee;
     padding: 10px;
-    margin-bottom: 5px; /* Added margin for space between tasks */
+    margin-bottom: 5px; 
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
@@ -79,26 +79,23 @@ body {
     cursor: pointer;
     transition: background-color 0.2s;
     
-    /* ⭐ New: Green background highlight */
-    background-color: #d4edda; /* Light green background */
-    border: 1px solid #c3e6cb; /* Subtle green border */
-    font-size: 1.1em; /* Slightly larger text for better readability */
+
+    background-color: #d4edda; 
+    border: 1px solid #c3e6cb; 
+    font-size: 1.1em; 
 }
 
-/* Ensure the completed task style uses a different color (like light blue or grey) 
-   so the green highlight is noticeable for active tasks */
 .f { 
     text-decoration: line-through;
-    background-color: #f8f9fa !important; /* Lighter color for done tasks */
+    background-color: #f8f9fa !important; 
     color: #888;
 }
 
 
 #e li {
-    /* ... existing styles ... */
+=
     padding: 10px;
-    
-    /* ⭐ INCREASE THIS VALUE for more space */
+ 
     margin-bottom: 15px; 
     
     border-radius: 4px;
@@ -108,7 +105,7 @@ body {
     cursor: pointer;
     transition: background-color 0.2s;
     
-    /* New: Green background highlight */
+
     background-color: #d4edda; 
     border: 1px solid #c3e6cb; 
     font-size: 1.1em; 
