@@ -153,6 +153,10 @@
 // });
 
 // h();
+
+
+
+
 const b = document.getElementById('b'); 
 const d = document.getElementById('d'); 
 const e = document.getElementById('e'); 
@@ -168,7 +172,8 @@ function h() {
 function i() {
     const j = [];
     e.querySelectorAll('li').forEach(k => {
-        
+        // Exclude the delete button's text ('x') from the task text
+        // assuming the delete button is always the last child
         const taskText = k.firstChild.textContent; 
         
         j.push({
@@ -201,14 +206,14 @@ function l(m, n = false) {
         
         if (q.target !== p) { 
             o.classList.toggle('f'); 
-            
+            // Removed: a.play() moved to delete button listener
             i();
         }
     });
 
     p.addEventListener('click', function() {
         e.removeChild(o);
-      
+        // ⭐ ADDED: Play the audio when the delete button is clicked
         a.play();
         i();
     });
@@ -231,3 +236,4 @@ b.addEventListener('keypress', function(r) {
 });
 
 h();
+
